@@ -10,7 +10,7 @@ locals {
 }
 
 resource "aws_security_group" "ssh_port" {
-  name        = "allow_ssh"
+  name        = var.security_group_name
   description = "SSH port"
 
   dynamic "ingress" {
