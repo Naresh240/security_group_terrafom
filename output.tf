@@ -1,3 +1,3 @@
-output "security_group_names" {
-  value = aws_security_group.ssh_port[*].name
+output sg_names {
+    value = aws_security_group.ssh_port[*].name
 }

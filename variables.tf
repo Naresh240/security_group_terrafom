@@ -1,3 +1,7 @@
-variable "security_group_name" {
-  type    = string
+variable ingress_rules {
+  type        = map(object({
+    port = number
+    description = string
+  }))
+  default = {}
 }
